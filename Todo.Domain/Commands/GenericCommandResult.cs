@@ -2,6 +2,8 @@ namespace Todo.Domain.Commands.Contracts
 {
     public class GenericCommandResult : ICommandResult
     {
+        public GenericCommandResult() { }
+
         public GenericCommandResult(bool success, string messsage, object data)
         {
             Success = success;
@@ -12,5 +14,6 @@ namespace Todo.Domain.Commands.Contracts
         public bool Success { get; set; }
         public string Messsage { get; set; }
         public object Data { get; set; }
+
     }
 }
