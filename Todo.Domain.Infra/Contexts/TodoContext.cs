@@ -23,6 +23,5 @@ namespace Todo.Domain.Infra.Contexts
             modelBuilder.Entity<TodoItem>().Property(x => x.Date);
             modelBuilder.Entity<TodoItem>().HasIndex(b => b.User);
         }
-
     }
 }
